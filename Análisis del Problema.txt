@@ -1,0 +1,48 @@
+**Análisis del Problema**
+
+La empresa de seguros TK-U enfrenta un problema con la eficiencia en la realización de cotizaciones. Actualmente, el proceso es manual y solo permite generar 50 cotizaciones diarias, lo que limita la captación de clientes potenciales. Para solucionar este problema, se requiere desarrollar un cotizador automático que tome en cuenta distintos factores para calcular el costo del seguro de forma rápida y precisa.
+
+Los factores que afectan la cotización son:
+1. **Edad del asegurado**: Debe ser mayor de edad (18+), y dependiendo de su edad, se le aplicará un recargo porcentual.
+2. **Estado civil y edad del cónyuge**: Si el asegurado está casado, la edad del cónyuge también afectará la cotización.
+3. **Cantidad de hijos**: Cada hijo agrega un recargo fijo sobre el precio base del seguro.
+
+**Diseño del Algoritmo**
+
+1. Solicitar al usuario los siguientes datos:
+   - Edad del asegurado.
+   - Estado civil del asegurado.
+   - Edad del cónyuge (si aplica).
+   - Número de hijos (si aplica).
+   
+2. Verificar que la edad del asegurado sea de al menos 18 años.
+   - Si es menor de 18, rechazar la cotización.
+   
+3. Calcular el recargo por edad del asegurado:
+   - 18 a 24 años: 10%
+   - 25 a 49 años: 20%
+   - 50+ años: 30%
+   
+4. Calcular el recargo por edad del cónyuge (si aplica):
+   - 18 a 24 años: 10%
+   - 25 a 49 años: 20%
+   - 50+ años: 30%
+   
+5. Calcular el recargo por hijos:
+   - 20% adicional por cada hijo.
+   
+6. Sumar todos los recargos al precio base del seguro.
+
+7. Mostrar el monto final de la cotización al usuario.
+
+**Ejemplo de Cálculo**
+
+Si el precio base del seguro es de Q.2000 y el asegurado tiene 23 años, su cónyuge 26 años, y tienen 2 hijos:
+- Recargo por asegurado: 10% de 2000 = Q.200
+- Recargo por cónyuge: 20% de 2000 = Q.400
+- Recargo por hijos: 2 * 20% de 2000 = Q.800
+- Total a pagar: 2000 + 200 + 400 + 800 = **Q.3400**
+
+**Entrega Final**
+El código del cotizador automático se completará en el archivo base proporcionado y se subirá a un repositorio de GitHub para su evaluación.
+

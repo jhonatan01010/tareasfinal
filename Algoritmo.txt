@@ -1,0 +1,32 @@
+# Algoritmo para el Cotizador de Seguros
+
+1. Iniciar un ciclo que se repetirá hasta que el usuario escriba "Salir".
+2. Solicitar el nombre del usuario.
+   - Si el usuario escribe "Salir", finalizar el programa.
+3. Solicitar la edad del usuario y convertirla a número.
+4. Preguntar si el usuario está casado.
+   - Si responde "Sí":
+     a. Solicitar la edad del cónyuge y convertirla a número.
+5. Preguntar si el usuario tiene hijos.
+   - Si responde "Sí":
+     a. Solicitar la cantidad de hijos y convertirla a número.
+6. Solicitar la cantidad de propiedades y convertirla a número.
+7. Solicitar el salario mensual del usuario y convertirlo a número.
+8. Inicializar la variable `recargo_total` en 0.
+9. Calcular los recargos:
+   - Según la edad del usuario:
+     a. 18-24 años → 10% del precio base.
+     b. 25-49 años → 20% del precio base.
+     c. 50+ años → 30% del precio base.
+   - Si el usuario está casado:
+     a. Aplicar la misma tabla de recargos a la edad del cónyuge.
+   - Si tiene hijos:
+     a. Agregar un recargo del 20% del precio base por cada hijo.
+   - Si tiene propiedades:
+     a. Agregar un recargo del 35% del precio base por cada propiedad.
+   - Aplicar un recargo del 5% del salario mensual.
+10. Calcular el precio final: `precio_base + recargo_total`.
+11. Mostrar los resultados:
+   - Recargo total aplicado.
+   - Precio final del seguro.
+12. Repetir el proceso hasta que el usuario escriba "Salir".
